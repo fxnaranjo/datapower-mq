@@ -4,7 +4,7 @@
 # IBM Datapower - Bridge HTTP to IBM MQ
 
 ***
-The following guide shows the basic configuration needed when a DataPower service connects an HTTP-based messaging system to an IBM MQ system. The handler implements HTTP transport connectivity on the client, which is the front end of the service. On the back end, the service employs IBM MQ URLs to determine the queue to which requests are forwarded and from which replies are pulled.
+This guide describes basic configuration to connect a HTTP-based messaging system to an IBM MQ System within a DataPower service. The handler implements HTTP transport connectivity on the client, which is the front end of the service. On the back end, the service employs IBM MQ URLs to determine the queue to which requests are forwarded and from which replies are pulled.
 
 ![Architecture](https://github.com/fxnaranjo/datapower-mq//raw/main/images/httptomq.png "Architecture")
 
@@ -19,8 +19,8 @@ You can find more information about this topic on: [Datapower Documentation](htt
 ***
 
 ### 2.Preparing MQ Environment
-- You must have access to an IBM MQ Queue Manager V9+ in order to create the queues for the demo
-- You can execute the following commands in you IBM MQ environment to create the queues
+- Ensure to have access to an IBM MQ Queue Manager V9+ in order to create the queues for the demo
+- Execute the following commands in you IBM MQ environment to create the queues
 ```
 runmqsc <QUEUE_MANAGER_MAME>
 DEFINE QLOCAL('DP_IN') REPLACE
@@ -36,7 +36,7 @@ EXIT
 - Obtain the deployable ACE bar file from [here](https://github.com/fxnaranjo/datapower-mq/blob/main/ace/Datapowerproject.generated.bar) to deploy the backend service to your ACE environment.
 - The implemented flow has the following componentes.
   - MQ Input: Acts as a listener for messages in the DP_IN queue
-  - Compute: Creates the response message and assigns the correlationID to the value of the messageID recieved, this is very important so Datapower is able to get the corresponding response message.
+  - Compute: Creates the response message and assigns the correlationID to the value of the messageID recieved, this is very important to allow Datapower to get the corresponding response message.
   - MQ Output: Sends the response message to the DP_OUT queue
 
 ![ACE](https://github.com/fxnaranjo/datapower-mq//raw/main/images/aceflow.png "ACE")
@@ -54,18 +54,18 @@ EXIT
 ![DP2](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp2.png "DP2")
 
 - Configure the properties for the Queue Manager connection:
-  - Name (Required): The name for the object, in this case **MYMQ**
-  - Host (Required): The hostname and port for your MQ Server
+  - Name (Required): The name of the object, in this case **MYMQ**
+  - Host (Required): The hostname and port of your MQ Server
   - Queue manager name: The name of the Queue Manager
   - Channel name: The name of the connection channel
   - Alternate user: Off
   - Units-of-work and backout: 0
-  - The rest of properties can be the default ones
+  - The rest of properties can be default
   
   ![DP3](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp3.png "DP3")
   ![DP4](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp4.png "DP4")
 
-- In the Connections and CSCI tabs leave the default values
+- In the Connections and CSCI tabs leave default values
 - In the MQCSP Tab configure the username and password to connect to your MQ Server
   ![DP5](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp5.png "DP5")
 
@@ -117,7 +117,7 @@ EXIT
 ***
 
 ### 6.Testing the Datapower Multi-Protocol Gateway Service
-- Once the configuration is done, the service testing can be made using any http method invocation tool using the address, port(Front Side Protocol Handler) and context configured.
+- Once the configuration is completed, the service testing can be made using any http method invocation tool using the address, port(Front Side Protocol Handler) and context configured.
 
 ![DP16](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp16.png "DP16")
 
