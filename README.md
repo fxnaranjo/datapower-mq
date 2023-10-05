@@ -82,6 +82,8 @@ EXIT
 
 - In the next screen click **Add** to create the new Multi-Protocol Gateway
 
+![DP8](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp8.png "DP8")
+
 - In the configuration tab, enter the **name** for the Multi-Protocol Gateway, choose the **XML Manager default**, in the **Type** select static-backend and in the Default property Bakend URL enter the URL of the queue manager, in this case **idgmq://MYMQ**,configure a Front Side Protocol to define the interface and port the service will be using.
 
-![DP8](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp8.png "DP8")
+![DP9](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp9.png "DP9")
