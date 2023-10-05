@@ -46,3 +46,5 @@ EXIT
 - Make sure you have a separete application domain (other than default)
 - Look for "IBM MQ" in the seacr bar and select IBM MQ v9+ queue manager
 ![DP1](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp1.png "DP1")
+- In the next screen click **Add** to create the new Queue Manager Connection
+![DP2](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp2.png "DP2")
