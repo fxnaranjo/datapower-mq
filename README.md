@@ -14,6 +14,7 @@ You can find more information about this topic on: [Datapower Documentation](htt
 - IBM Datapower Physical Appliance/Virtual Machine/Docker Container (IDG.10.5.0.6)
 - IBM MQ V9.X
 - App Connect Enterprise 12.x with associated MQ
+- There must be network connectivity between all components
 
 ***
 
@@ -51,6 +52,7 @@ EXIT
 - In the next screen click **Add** to create the new Queue Manager Connection
 
 ![DP2](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp2.png "DP2")
+
 - Configure the properties for the Queue Manager connection:
   - Name (Required): The name for the object, in this case **MYMQ**
   - Host (Required): The hostname and port for your MQ Server
@@ -62,3 +64,12 @@ EXIT
   
   ![DP3](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp3.png "DP3")
   ![DP4](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp4.png "DP4")
+
+- In the Connections and CSCI tabs leave the default values
+- In the MQCSP Tab configure the username and password to connect to your MQ Server
+  ![DP5](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp5.png "DP5")
+
+- Once completed Apply and Save all changes. The new Queue Manager object should be up and running.
+
+  ![DP6](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp6.png "DP6")
+
