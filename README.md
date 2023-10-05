@@ -121,4 +121,4 @@ EXIT
 
 ![DP16](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp16.png "DP16")
 
-# Congratulations you have successfully configured an HTTP to IBM MQ Bridge using IBM Datapower
+## Congratulations you have successfully configured an HTTP to IBM MQ Bridge using IBM Datapower
