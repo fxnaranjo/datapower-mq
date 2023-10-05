@@ -45,7 +45,7 @@ EXIT
 
 ### 3.Configure IBM Datapower Local Queue Manager Connection
 - Make sure you have a separate application domain (other than default)
-- Look for "IBM MQ" in the seacr bar and select IBM MQ v9+ queue manager
+- Look for "IBM MQ" in the search bar and select IBM MQ v9+ queue manager
 
 ![DP1](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp1.png "DP1")
 
