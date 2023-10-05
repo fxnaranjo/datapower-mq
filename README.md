@@ -34,8 +34,8 @@ EXIT
 - This flow is the simulated backend for the MQ Service.
 - Obtain the project interchage files from [here](https://github.com/fxnaranjo/datapower-mq/blob/main/ace/HTTP2MQ.zip) if you want to review and change the flow that acts as a backend service for MQ. (Optional)
 - Obtain the deployable ACE bar file from [here](https://github.com/fxnaranjo/datapower-mq/blob/main/ace/Datapowerproject.generated.bar) to deploy the backend service to your ACE environment.
-- The implemented flow have the following componentes.
-  - MQ Input: Listens for messages in the DP_IN queue
+- The implemented flow has the following componentes.
+  - MQ Input: Acts as a listener for messages in the DP_IN queue
   - Compute: Creates the response message and assigns the correlationID to the value of the messageID recieved, this is very important so Datapower is able to get the corresponding response message.
   - MQ Output: Sends the response message to the DP_OUT queue
 
@@ -94,13 +94,13 @@ EXIT
 
   - Create a new **Client to Server** rule with the following actions:
     - A match rule to handle the requests of every context: *
-    - A gateway script action that configures the input and output queues for the bridge service: the file to be used here is: [config.js](https://github.com/fxnaranjo/datapower-mq/blob/main/datapower/config.js)
+    - A gateway script action that configures the input and output queues for the bridge service: the file to be used is: [config.js](https://github.com/fxnaranjo/datapower-mq/blob/main/datapower/config.js)
 
     ![DP12](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp12.png "DP12")
 
   - Create a new **Server to Client** rule with the following actions:
     - A match rule to handle the responses of every context: *
-    - A gateway script action to set the response headers for the http request: the file to be used here is: [config2.js](https://github.com/fxnaranjo/datapower-mq/blob/main/datapower/config2.js)
+    - A gateway script action to set the response headers for the http request: the file to be used is: [config2.js](https://github.com/fxnaranjo/datapower-mq/blob/main/datapower/config2.js)
 
     ![DP13](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp13.png "DP13")
 
