@@ -111,4 +111,14 @@ EXIT
 ![DP14](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp14.png "DP14")
 ![DP15](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp15.png "DP15")
 
+- Once completed Apply and Save all changes.
 
+
+***
+
+### 5.Testing the Datapower Multi-Protocol Gateway Service
+- Once the configuration is done, the service testing can be made using any http method invocation tool using the address, port(Front Side Protocol Handler) and context configured.
+
+![DP16](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp16.png "DP16")
+
+# Congratulations you have successfully configured an HTTP to IBM MQ Bridge using IBM Datapower
