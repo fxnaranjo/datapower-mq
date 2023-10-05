@@ -19,8 +19,8 @@ You can find more information about this topic on: [Datapower Documentation](htt
 ***
 
 ### 2.Preparing MQ Environment
-- You must have access to an IBM MQ Queue Manager V9+ in order to create the queues for the excersice
-- You can execeute the following commands in you IBM MQ environment to create the queues
+- You must have access to an IBM MQ Queue Manager V9+ in order to create the queues for the demo
+- You can execute the following commands in you IBM MQ environment to create the queues
 ```
 runmqsc <QUEUE_MANAGER_MAME>
 DEFINE QLOCAL('DP_IN') REPLACE
