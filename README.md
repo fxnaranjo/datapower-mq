@@ -26,11 +26,12 @@ EXIT
 ```
 
 ### 2.Preparing ACE(App Connect Enterprise) Environment
+- This flow is the simulated backend for the MQ Service.
 - Obtain the project interchage files from [here](https://github.com/fxnaranjo/datapower-mq/blob/main/ace/HTTP2MQ.zip) if you want to review and change the flow that acts as a backend service for the exercise.
 - Obtain the deployable ACE bar file from [here](https://github.com/fxnaranjo/datapower-mq/blob/main/ace/Datapowerproject.generated.bar) to deploy the backend service to your ACE environment.
 - The implemented flow have the following componentes.
- - MQ Input: Listens for messages in the DP_IN queue
- - Compute: Creates the response message and assigns the correlationID to the value of the messageID recieved, this is very important so Datapower is able to get the corresponding response message.
- - MQ Output: Send the response message to the DP_OUT queue
+  - MQ Input: Listens for messages in the DP_IN queue
+  - Compute: Creates the response message and assigns the correlationID to the value of the messageID recieved, this is very important so Datapower is able to get the corresponding response message.
+  - MQ Output: Sends the response message to the DP_OUT queue
 
 ![ACE](https://github.com/fxnaranjo/datapower-mq//raw/main/images/aceflow.png "ACE")
