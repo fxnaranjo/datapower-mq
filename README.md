@@ -30,7 +30,7 @@ EXIT
 
 ***
 
-### 2.Preparing ACE(App Connect Enterprise) Environment
+### 3.Preparing ACE(App Connect Enterprise) Environment
 - This flow is the simulated backend for the MQ Service.
 - Obtain the project interchage files from [here](https://github.com/fxnaranjo/datapower-mq/blob/main/ace/HTTP2MQ.zip) if you want to review and change the flow that acts as a backend service for MQ. (Optional)
 - Obtain the deployable ACE bar file from [here](https://github.com/fxnaranjo/datapower-mq/blob/main/ace/Datapowerproject.generated.bar) to deploy the backend service to your ACE environment.
@@ -43,7 +43,7 @@ EXIT
 
 ***
 
-### 3.Configure IBM Datapower Local Queue Manager Connection
+### 4.Configure IBM Datapower Local Queue Manager Connection
 - Make sure you have a separate application domain (other than default)
 - Look for "IBM MQ" in the search bar and select IBM MQ v9+ queue manager
 
@@ -75,7 +75,7 @@ EXIT
 
 ***
 
-### 4.Configure IBM Datapower Multi-Protocol Gateway for HTTP to IBM MQ Bridge
+### 5.Configure IBM Datapower Multi-Protocol Gateway for HTTP to IBM MQ Bridge
 - In the web console main page select **Services** and **Multi-Protocol Gateway**
 
 ![DP7](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp7.png "DP7")
@@ -116,7 +116,7 @@ EXIT
 
 ***
 
-### 5.Testing the Datapower Multi-Protocol Gateway Service
+### 6.Testing the Datapower Multi-Protocol Gateway Service
 - Once the configuration is done, the service testing can be made using any http method invocation tool using the address, port(Front Side Protocol Handler) and context configured.
 
 ![DP16](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp16.png "DP16")
