@@ -48,3 +48,13 @@ EXIT
 ![DP1](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp1.png "DP1")
 - In the next screen click **Add** to create the new Queue Manager Connection
 ![DP2](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp2.png "DP2")
+- Configure the properties for the Queue Manager connection:
+  - Name (Required): The name for the object, in this case **MYMQ**
+  - Host (Required): The hostname and port for your MQ Server
+  - Queue manager name: The name of the Queue Manager
+  - Channel name: The name of the connection channel
+  - Alternate user: Off
+  - Units-of-work and backout: 0
+  - The rest of properties can be the default ones
+  ![DP3](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp3.png "DP3")
+  ![DP4](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp4.png "DP4")
