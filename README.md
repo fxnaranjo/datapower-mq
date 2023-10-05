@@ -32,7 +32,7 @@ EXIT
 
 ### 2.Preparing ACE(App Connect Enterprise) Environment
 - This flow is the simulated backend for the MQ Service.
-- Obtain the project interchage files from [here](https://github.com/fxnaranjo/datapower-mq/blob/main/ace/HTTP2MQ.zip) if you want to review and change the flow that acts as a backend service for the exercise. (Optional)
+- Obtain the project interchage files from [here](https://github.com/fxnaranjo/datapower-mq/blob/main/ace/HTTP2MQ.zip) if you want to review and change the flow that acts as a backend service for MQ. (Optional)
 - Obtain the deployable ACE bar file from [here](https://github.com/fxnaranjo/datapower-mq/blob/main/ace/Datapowerproject.generated.bar) to deploy the backend service to your ACE environment.
 - The implemented flow have the following componentes.
   - MQ Input: Listens for messages in the DP_IN queue
