@@ -94,4 +94,21 @@ EXIT
 
   - Create a new **Client to Server** rule with the following actions:
     - A match rule to handle the requests of every context: *
-    - A gateway script action that configures the input and output queue for the bridge service: the file to be used here is: [config.js](https://github.com/fxnaranjo/datapower-mq/blob/main/datapower/config.js)
+    - A gateway script action that configures the input and output queues for the bridge service: the file to be used here is: [config.js](https://github.com/fxnaranjo/datapower-mq/blob/main/datapower/config.js)
+
+    ![DP12](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp12.png "DP12")
+
+  - Create a new **Server to Client** rule with the following actions:
+    - A match rule to handle the responses of every context: *
+    - A gateway script action to set the response headers for the http request: the file to be used here is: [config2.js](https://github.com/fxnaranjo/datapower-mq/blob/main/datapower/config2.js)
+
+    ![DP13](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp13.png "DP13")
+
+- Once completed Apply and Save all changes.
+
+- Back in the Multi-Protocol Gateway configuration make sure that **Response type** and **Request type** is set to JSON
+
+![DP14](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp14.png "DP14")
+![DP15](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp15.png "DP15")
+
+
