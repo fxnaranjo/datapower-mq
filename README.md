@@ -87,3 +87,11 @@ EXIT
 - In the configuration tab, enter the **name** for the Multi-Protocol Gateway, choose the **XML Manager default**, in the **Type** select static-backend and in the Default property Bakend URL enter the URL of the queue manager, in this case **idgmq://MYMQ**,configure a Front Side Protocol to define the interface and port the service will be using.
 
 ![DP9](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp9.png "DP9")
+![DP10](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp10.png "DP10")
+
+- Next click on **+** to create a new Multi-Protocol Gateway Style Policy
+![DP11](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp11.png "DP11")
+
+  - Create a new **Client to Server** rule with the following actions:
+    - A match rule to handle the requests of every context: *
+    - A gateway script action that configures the input and output queue for the bridge service: the file to be used here is: [config.js](https://github.com/fxnaranjo/datapower-mq/blob/main/datapower/config.js)
