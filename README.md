@@ -45,11 +45,11 @@ EXIT
 ### 3.Configure IBM Datapower objects
 - Make sure you have a separete application domain (other than default)
 - Look for "IBM MQ" in the seacr bar and select IBM MQ v9+ queue manager
-<br>
+
 ![DP1](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp1.png "DP1")
 
 - In the next screen click **Add** to create the new Queue Manager Connection
-<br>
+
 ![DP2](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp2.png "DP2")
 - Configure the properties for the Queue Manager connection:
   - Name (Required): The name for the object, in this case **MYMQ**
@@ -59,6 +59,6 @@ EXIT
   - Alternate user: Off
   - Units-of-work and backout: 0
   - The rest of properties can be the default ones
-  <br>
+  
   ![DP3](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp3.png "DP3")
   ![DP4](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp4.png "DP4")
