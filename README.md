@@ -43,7 +43,7 @@ EXIT
 
 ***
 
-### 3.Configure IBM Datapower objects
+### 3.Configure IBM Datapower Local Queue Manager Connection
 - Make sure you have a separete application domain (other than default)
 - Look for "IBM MQ" in the seacr bar and select IBM MQ v9+ queue manager
 
@@ -73,3 +73,15 @@ EXIT
 
   ![DP6](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp6.png "DP6")
 
+***
+
+### 4.Configure IBM Datapower Multi-Protocol Gateway for HTTP to IBM MQ Bridge
+- In the web console main page select **Services** and **Multi-Protocol Gateway**
+
+![DP7](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp7.png "DP7")
+
+- In the next screen click **Add** to create the new Multi-Protocol Gateway
+
+- In the configuration tab, enter the **name** for the Multi-Protocol Gateway, choose the **XML Manager default**, in the **Type** select static-backend and in the Default property Bakend URL enter the URL of the queue manager, in this case **idgmq://MYMQ**,configure a Front Side Protocol to define the interface and port the service will be using.
+
+![DP8](https://github.com/fxnaranjo/datapower-mq//raw/main/images/dp8.png "DP8")
